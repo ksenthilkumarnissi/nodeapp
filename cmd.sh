@@ -37,4 +37,9 @@ sleep 5
 echo "-----------------Cat Status-----------------"
 cat /usr/src/nodeapp.txt
 sleep 5
+
+echo "-----------------uptime-----------------"
+uptime
+sleep 5
+
 return 0
