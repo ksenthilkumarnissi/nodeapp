@@ -13,5 +13,10 @@ app.get('/nodeapp', (req, res) => {
   res.send("Node App Running -by senthil");
 });
 
+
+app.get('/', (req, res) => {
+    res.send("Node App Running -by senthil");
+  });
+
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
