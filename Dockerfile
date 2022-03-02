@@ -1,6 +1,6 @@
 FROM node
 RUN apt-get update && apt-get -y install sudo
-RUN apt-get curl
+RUN apt-get install curl
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 USER root
 WORKDIR /usr/src/app
