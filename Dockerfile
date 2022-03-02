@@ -10,6 +10,9 @@ RUN npm install
 COPY . .
 EXPOSE 4000
 CMD ["node", "index.js"]
-CMD ["docker", "ps"]
-CMD ["curl", "http://127.0.0.1:4000"]
+SHELL ["docker", "ps"]
+SHELL ["curl", "http://127.0.0.1:4000"]
+SHELL ["ifconfig"]
+
+
 
