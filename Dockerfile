@@ -16,8 +16,6 @@ COPY cmd.sh ./
 RUN npm install
 COPY . .
 EXPOSE 4000
-RUN cmd.sh
-CMD ["uptime"]
 CMD ["node", "./index.js"]
 SHELL ["sh"]
 RUN cmd.sh
