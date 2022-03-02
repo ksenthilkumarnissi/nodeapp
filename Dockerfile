@@ -11,7 +11,7 @@ COPY . .
 EXPOSE 4000
 CMD ["node", "index.js"]
 SHELL ["sh"]
-RUN echo "Hello from Docker-$ifconfig date is $date"
-
+RUN echo "Hello from Docker date is `date`"
+RUN echo "`ifconfig`" 
 
 
