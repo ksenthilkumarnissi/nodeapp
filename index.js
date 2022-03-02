@@ -13,7 +13,7 @@ const content = 'Server is Up.'
 // App
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/nodeapp', (req, res) => {
     res.send("Node App Running -by senthil");
   });
 
