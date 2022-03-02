@@ -6,12 +6,12 @@ RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 USER root
 WORKDIR /usr/src/app
 COPY package*.json ./
+COPY cmd.sh ./
 RUN npm install
 COPY . .
 EXPOSE 4000
 CMD ["node", "index.js"]
 SHELL ["sh"]
-RUN echo "Hello from Docker date is `date`"
-RUN echo "`ifconfig`" 
+RUN cmd.sh
 
 
