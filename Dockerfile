@@ -1,7 +1,7 @@
 FROM node
 RUN apt-get update && apt-get -y install sudo
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
-USER docker
+USER root
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
