@@ -2,6 +2,7 @@ FROM node
 RUN apt-get update && apt-get -y install sudo
 RUN apt-get install curl
 RUN apt-get install net-tools
+RUN apt-get install --reinstall systemd
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 USER root
 WORKDIR /usr/src/app
