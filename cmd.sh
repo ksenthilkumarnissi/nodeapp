@@ -1,45 +1,45 @@
-echo "-----------------Date-----------------"
+echo "\n-----------------Date-----------------"
 date
-sleep 5
+sleep 2
 
-echo "-----------------Node Version-----------------"
+echo "\n-----------------Node Version-----------------"
 node -v
-sleep 5
+sleep 2
 
-echo "-----------------List Files-----------------"
+echo "\n-----------------List Files-----------------"
 ls -lrt
-sleep 5
+sleep 2
 
-echo "-----------------pwd-----------------"
+echo "\n-----------------pwd-----------------"
 pwd
-sleep 5
+sleep 2
 
-echo "-----------------Ifconfig-----------------"
+echo "\n-----------------Ifconfig-----------------"
 ifconfig
-sleep 5
+sleep 2
 
-echo "-----------------Netstat-----------------"
+echo "\n-----------------Netstat-----------------"
 netstat -at -np
-sleep 5
+sleep 2
 
-echo "-----------------Docker-----------------"
+echo "\n-----------------Docker-----------------"
 docker ps
-sleep 5
+sleep 2
 
-echo "-----------------systemctl-----------------"
+echo "\n-----------------systemctl-----------------"
 systemctl status docker
-sleep 5
+sleep 2
 
-echo "-----------------Curl-----------------"
+echo "\n-----------------Curl-----------------"
 curl -i http://127.0.0.1:4000/
-sleep 5
+sleep 2
 
-echo "-----------------Cat Status-----------------"
+echo "\n-----------------Cat Status-----------------"
 cat /usr/src/nodeapp.txt
-sleep 5
+sleep 2
 
-echo "-----------------uptime-----------------"
+echo "\n-----------------uptime-----------------"
 uptime
-sleep 5
+sleep 2
 
 return 0
